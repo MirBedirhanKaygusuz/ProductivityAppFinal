@@ -85,15 +85,4 @@
         android:tint="@color/white" />
 
     <!-- Back to List Button -->
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/backToListButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="25dp"
-        android:layout_above="@id/confirmTaskButton"
-        android:layout_marginBottom="10dp"
-        android:backgroundTint="@color/gray_400"
-        android:src="@drawable/baseline_arrow_back_24"
-        android:tint="@color/white" />
 </RelativeLayout>

@@ -31,6 +31,18 @@ class SharedViewModel : ViewModel() {
             }
     }
 
+    fun deleteTaskFromFirestore(taskId: String) {
+        db.collection("tasks").document(taskId)
+            .delete()
+            .addOnSuccessListener {
+                Log.d("Firestore", "Task deleted successfully.")
+                fetchTasksFromFirestore() // Listeyi yenile
+            }
+            .addOnFailureListener { e ->
+                Log.e("Firestore", "Error deleting task", e)
+            }
+    }
+
     private fun calculateDailyStatistics(tasks: List<Task>) {
         val statsMap = mutableMapOf<String, DailyStats>()
 

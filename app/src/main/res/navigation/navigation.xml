@@ -27,6 +27,22 @@
         <argument
             android:name="taskName"
             app:argType="string" />
+        <argument
+            android:name="taskDescription"
+            app:argType="string" />
     </fragment>
+
+    <fragment
+        android:id="@+id/editTaskFragment"
+        android:name="com.example.productivityapptest.EditTaskFragment"
+        android:label="Edit Task">
+        <argument
+            android:name="taskName"
+            app:argType="string" />
+        <argument
+            android:name="taskDescription"
+            app:argType="string" />
+    </fragment>
+
 
 </navigation>

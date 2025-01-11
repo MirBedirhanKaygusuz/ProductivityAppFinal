@@ -33,7 +33,6 @@ class AddTaskFragment : Fragment(R.layout.fragment_add_task) {
         val selectDateButton: Button = view.findViewById(R.id.selectDateButton)
         val selectTimeButton: Button = view.findViewById(R.id.selectTimeButton)
         val confirmTaskButton: FloatingActionButton = view.findViewById(R.id.confirmTaskButton)
-        val backToListButton: FloatingActionButton = view.findViewById(R.id.backToListButton)
 
         firestore = FirebaseFirestore.getInstance()
 
@@ -76,9 +75,7 @@ class AddTaskFragment : Fragment(R.layout.fragment_add_task) {
             }
         }
 
-        backToListButton.setOnClickListener {
-            findNavController().navigateUp()
-        }
+
 
         return view
     }
