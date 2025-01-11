@@ -1,0 +1,99 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F1F5">
+
+    <!-- Title Input -->
+    <TextView
+        android:id="@+id/titleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Title"
+        android:textColor="#333333"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/taskInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleLabel"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#CCCCCC"
+        android:hint="Enter your task here."
+        android:padding="12dp" />
+
+    <!-- Description Input -->
+    <TextView
+        android:id="@+id/descriptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/taskInput"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Description"
+        android:textColor="#333333"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/descriptionInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionLabel"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#CCCCCC"
+        android:hint="Enter a description."
+        android:padding="12dp" />
+
+    <!-- Select Date Button -->
+    <Button
+        android:id="@+id/selectDateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Select Date" />
+
+    <!-- Select Time Button -->
+    <Button
+        android:id="@+id/selectTimeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectDateButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Select Time" />
+
+    <!-- Confirm Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/confirmTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/green_400"
+        android:src="@drawable/baseline_done_24"
+        android:tint="@color/white" />
+
+    <!-- Back to List Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/backToListButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25dp"
+        android:layout_above="@id/confirmTaskButton"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/gray_400"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:tint="@color/white" />
+</RelativeLayout>
